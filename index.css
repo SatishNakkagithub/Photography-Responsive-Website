@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+   position: relative;
+   background: linear-gradient(to top,rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(pexels-pixabay-33109.jpg);
+   width: 100vw;
+   height: 100vh;
+   background-position: center;
+   background-repeat: cover;
+}
+
+.icon{
+    position:absolute;
+    top: 10px;
+    left: 14px;
+
+}
+
+.logo{
+    font-family: Arial;
+    color: #f7f301;
+    font-size: 40px;
+}
+
+.nav {
+    width: 100vw;
+}
+
+.nav ul {
+    height: 40px;
+    list-style: none ;
+    margin-left: 240px;
+    margin-right: 20px;
+    float: left;
+
+}
+.nav ul li{
+    display: flex;
+    float: left;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.nav ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.nav ul li a:hover{
+    color: yellow;
+}
+ 
+.search {
+    float: right;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.search input{
+    float: left;
+    height: 22px;
+    width: 200px;
+    background: transparent;
+    color: white;
+    border: 1px solid yellow;
+     border-top-left-radius: 6px;
+     border-bottom-left-radius: 6px;
+     padding: 4px;
+     font-size: 16px;  
+}
+.search input:focus{
+    outline: none;
+}
+.search button{
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 80px;
+    height: 32px;
+    border: none;
+    background-color: #f7f301;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    transition: all 0.5s ease ease-in-out;
+}
+.search button:hover{
+    background-color: white;
+}
+
+.content{
+    color: white;
+    clear: both;
+    width: 60vw;
+    padding-top: 160px;
+    padding-left: 40px;
+    float: left;
+    
+  /*  border: 1px solid white;*/
+}
+.content h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    letter-spacing:2px ;
+}
+.content h1 span{
+    color: #f7f301;
+    font-size: 72px;
+}
+.content p{
+    font-size: 24px;
+    padding: 10px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+}
+.btn{
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #f7f301;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover{
+    background-color: white;
+    color: orange;
+}
+.cn_btn{
+    margin-top: 10px;
+    margin-left: 50px;  
+}
+
+.form {
+    color: white;
+    background: linear-gradient( to top,rgba(19, 18, 18, 0.185),rgba(31, 30, 30, 0.7));
+    width: 300px;
+    height: 400px;
+    float: right ;
+    margin-top: 180px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px  #313131;
+}
+.form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 44px;
+    line-height: 44px;
+    background-color: rgba(211, 81, 20, 0.637);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form input{
+    color: white;
+    width: 100%;
+    height: 40px;
+    margin-top: 14px;
+    background: transparent;
+    border-top:  none;
+    border-left:  none;
+    border-right:   none;
+    border-bottom:  1px solid yellow;
+    font-size: 16px;
+}
+.li_btn{
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.link {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+}
+.link a{
+    text-decoration: none;
+    color:rgb(161, 75, 44) ;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+.link a:hover{
+    color: #f7f301;
+}
+.liw {
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.icons ion-icon{
+font-size: 36px;
+margin-left: 20px;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+}
+.icons ion-icon:first-child{
+    margin-left: 0;
+    
+}
+.icons ion-icon:hover{
+    color: #f7f301;
+}
+/*responsive css*/
+
+@media screen and (max-width: 1200px) {
+    /*normal screen*/
+    .logo{
+        font-size: 3.6vw;
+    }
+    .nav ul li a{
+        font-size: 1.6vw;
+    }
+    .content h1{
+        font-size: 5.6vw;
+    }
+    .content h1 span{
+        font-size: 6.6vw;
+
+    }
+    .content p{
+        font-size:2.3vw;
+
+    }
+    .cn_btn{
+        width: 16vw;
+        height: 5.4vh;
+        font-size: 1.8vw;
+    }}
+    @media screen and (max-width:974px) {
+        .main{
+            height:150vh;
+        }
+        .logo{
+            font-size: 4.2vw;
+        }
+        .nav ul{
+            width: auto;
+            float: none;
+            
+        }
+.nav li a{
+    font-size: 1.6vw;
+}
+.search{
+    clear: both;
+    float: left;
+    margin-left: 265px;
+    padding-top: 14px;
+}
+.content{
+    width:92vw;
+    padding-top: 40px;
+    padding-left: 5vw;   
+    margin-bottom: 60px; 
+    
+}
+.content h1{
+    font-size: 7.2vw;
+}
+.content h1 span{
+    font-size: 8.1vw;
+}
+.content p{
+    font-size: 2.5vw;
+}
+.cn_btn {
+    font-size: 2.1w;
+    width :18vw;
+}
+.form{
+    clear: both;
+    float: none;
+    margin: auto;
+}}
+@media screen and (max-width: 865px) {
+    .icon{
+        position: initial;
+        text-align: center;
+}
+.logo{
+    font-size: 7.2vw;
+    padding-top: 20px;
+}
+.nav ul {
+    margin: 0;
+    width: 98vw;
+
+}
+.nav ul li a{
+    font-size: 2.1vw;
+}
+.search{
+    margin-left: 4vw;
+}
+
+}
+@media screen and (max-width:650px) {
+    .main {
+        background-position: 35%;
+    }
+  .logo {
+    font-size: 8.5vw;
+  }  
+  .nav ul li a{
+    font-size: 2.7vw;
+  }
+  .search input{
+    width: 160px;
+  }
+  .content h1{
+    padding-top: 0.0001vw;
+    
+  }
+  .content h1{
+    font-size: 9vw;
+  }
+  .content h1 span{
+    font-size: 9.5vw;
+  }
+  .content p{
+    font-size: 3.3vw;
+  }
+  .cn_btn{
+    width: 30vw;
+    height: 6.8vw;
+    font-size: 3.3vw;
+  }
+}
+@media screen and (max-width:450px) {
+    .logo{
+        font-size: 11.5vw;
+    }
+    .nav ul li a{
+        font-size: 3.6vw;
+    }
+    .search{
+        margin-left: 100px;
+    }
+    .content p{
+        font-size: 4.2vw;
+    }
+.form{
+    width: 72vw;;
+}
+}
+
+    
